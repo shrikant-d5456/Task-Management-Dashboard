@@ -4,7 +4,7 @@ import { BsClipboardDataFill, BsGrid1X2Fill, BsBell, BsJournalText, BsX, BsList 
 import Dashboard from './Dashboard';
 import TaskFilter from './TaskFilter';
 import TaskForm from './TaskForm';
-import TaskList from './taskList';
+import TaskList from './TaskList';
 import NotFoundPage from '../NotFoundPage';
 
 const Layout = () => {
