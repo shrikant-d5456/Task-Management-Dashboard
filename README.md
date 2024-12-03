@@ -34,5 +34,6 @@ Ensure you have the following installed:
   ```bash
   npm run dev
 
+
 5. Open your browser and navigate to:
   http://localhost:5173
