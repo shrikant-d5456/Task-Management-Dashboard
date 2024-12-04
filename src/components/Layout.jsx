@@ -46,7 +46,7 @@ const Layout = () => {
     ];
 
     return (
-        <main className='lg:flex w-full h-screen md:px-8'>
+        <main className='lg:flex w-full h-screen lg:px-8'>
             {/* Sidebar */}
             <div className='lg:block hidden w-[19rem] h-screen bg-secondary p-4'>
                 <h2 className='text-white text-xl font-bold mb-4'>Task Management App</h2>
@@ -66,16 +66,16 @@ const Layout = () => {
                 </ul>
             </div>
             <div className="lg:hidden bg-[#0099ff] py-2">
-                <button onClick={toggleMenu} className="text-gray-100 focus:outline-none focus:text-white">
-                    {isOpen ? <BsX className="h-6 w-6" /> : <BsList className="h-6 w-6" />}
+                <button onClick={toggleMenu} className="text-gray-100 focus:outline-none focus:text-white flex gap-2">
+                    {isOpen ? <BsX className="h-6 w-6" /> : <BsList className="h-6 w-6" />} Task Mangment App
                 </button>
                 {isOpen && (
 
                     <div className="lg:hidden mt-2 absolute bg-[#0099ff] w-full border-t-2 transition-all z-20">
-                        <a href="/" onClick={toggleMenu} className="block px-4 py-2 text-gray-100 hover:text-white">Dashboard</a>
-                        <a href="/task-form" onClick={toggleMenu} className="block px-4 py-2 text-gray-100 hover:text-white">Add Task</a>
-                        <a href="/task-filter" onClick={toggleMenu} className="block px-4 py-2 text-gray-100 hover:text-white">Filter Your Task</a>
-                        <a href="/task-list" onClick={toggleMenu} className="block px-4 py-2 text-gray-100 hover:text-white">Task List</a>
+                        <Link to="/" onClick={toggleMenu} className="block px-4 py-2 text-gray-100 hover:text-white">Dashboard</Link>
+                        <Link to="/task-form" onClick={toggleMenu} className="block px-4 py-2 text-gray-100 hover:text-white">Add Task</Link>
+                        <Link to="/task-filter" onClick={toggleMenu} className="block px-4 py-2 text-gray-100 hover:text-white">Filter Your Task</Link>
+                        <Link to="/task-list" onClick={toggleMenu} className="block px-4 py-2 text-gray-100 hover:text-white">Task List</Link>
                     </div>
 
                 )}
